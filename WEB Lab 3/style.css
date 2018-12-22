@@ -1,0 +1,172 @@
+body{
+    margin:0 ;
+    padding: 0;
+}
+h1,p{
+    padding-left: 10%;
+    padding-right:10%;
+    color: #ffffff;
+}
+h1{
+    font-family: "Avenir Next";
+    font-size: 1.5em;
+}
+p{
+    font-family: "Avenir Next";
+    font-size: 1em;
+}
+#logo {
+  animation-name: slide_rotate_unhide;
+  animation-duration: 3s;
+}
+header{
+  animation-name: slide;
+  animation-duration: 2s;
+}
+.topnav {
+    font-family: "Avenir Next";
+    font-style: medium;
+    background-color: #ffffff;
+    position: fixed; 
+    top: 0; 
+    z-index: 9999;
+    width: 100%; 
+}
+
+.topnav a {
+    float: left;
+    color: #345065;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.topnav a:hover {
+    background-color: #0EA6CB;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #345065;
+    color: white;
+}
+.topnav img {
+    padding: 13px 25px;
+}
+.dropdown {
+   float: left;
+   overflow: hidden;
+}
+
+.dropdown .dropbtn {
+   font-size: 16px;
+   border: none;
+   outline: none;
+   color: #345065;
+   padding: 20px 40px;
+   background-color: inherit;
+   font-family: inherit;
+   margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+   background-color: #0EA6CB;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #ffffff;
+   min-width: 160px;
+   box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.dropdown-content a {
+   float: none;
+   color: #345065;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+   transition: transform .2s;
+}
+
+.dropdown-content a:hover {
+   background-color: #0EA6CB;
+}
+
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+.myimg{
+    margin-top: 62px;
+}
+.copyr{
+    color: #909FAB;
+    font-size: 1em;
+    position: relative;
+    padding-top: 2%;
+}
+#mydiv{
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+    height: 660px;
+    float: left;
+    background-color: #345065;
+    margin-left: 2.5%;
+    width: 30%;
+}
+#content{
+  height: 660px;
+  width: 100%;
+  margin-top: 6%;
+  margin-bottom: 3%;
+}
+
+#mydiv:hover{
+  transform: scale(1.05);
+  transition-duration: 0.5s; 
+}
+
+footer{
+      bottom: 0;
+      background-color: #345065;
+      height: 80px;
+      width: 100%;
+    ;
+}
+
+@keyframes slide_rotate_unhide {
+  from {
+    transform: rotate(0deg);
+    opacity: 0.0;     
+    margin-left: -100px;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 1;     
+    margin-right: 0px;
+  }
+}
+
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    margin-top: -70px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+

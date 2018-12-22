@@ -1,0 +1,101 @@
+body{
+  font-family: "Avenir Next";
+    margin:0 ;
+    padding: 0;
+}
+h1,p{
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-right:10%;
+    color: #ffffff;
+}
+h1{
+    font-family: "Avenir Next";
+    font-size: 1.5em;
+}
+p{
+    font-family: "Avenir Next";
+    font-size: 1em;
+}
+
+header{
+  animation-name: slide;
+  animation-duration: 2s;
+  }
+.logo {
+    margin-left: auto;
+    margin-right: 15px;
+    padding: 10px!important;
+    width: 40px;
+    height: 40px;
+    background: url(materials/logo.png) 25% 25%/ contain no-repeat;
+    animation-name: slide_rotate_unhide;
+    animation-duration: 3s;
+}
+header{
+  animation-name: slide;
+  animation-duration: 2s;
+}.myimg{
+    margin-top: 62px;
+}
+.copyr{
+    color: #909FAB;
+    font-size: 1em;
+    position: relative;
+    padding-top: 2%;
+}
+#mydiv{
+    margin:10px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+    height: 660px;
+    float: left;
+    background-color: #345065;
+    margin-left: 2.5%;
+    width: 430px;
+}
+
+#content{
+  height: 1400px;
+  width: 100%;
+  margin-top: 6%;
+  margin-bottom: 3%;
+}
+
+#mydiv:hover{
+  transform: scale(1.05);
+  transition-duration: 0.5s; 
+}
+
+footer{
+      bottom: 0;
+      background-color: #345065;
+      height: 80px;
+      width: 100%;
+    ;
+}
+
+@keyframes slide_rotate_unhide {
+  from {
+    transform: rotate(0deg);
+    opacity: 0.0;     
+    margin-left: -100px;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 1;     
+    margin-right: 0px;
+  }
+}
+
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    margin-top: -70px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
